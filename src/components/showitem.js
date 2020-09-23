@@ -4,6 +4,7 @@ const ShowItem = ({file}) => {
     if( file.data.title) {
         let subreddit = "https://reddit.com/r/" + file.data.subreddit;
         let post_link = "https://reddit.com" + file.data.permalink;
+        let dateVar = new Date(file.data.created_utc*1000); 
         return (
             <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className=" card-link">
@@ -17,6 +18,7 @@ const ShowItem = ({file}) => {
                         </div>
                         <p className="card-text">
                             <br/>Posted on: <a href={subreddit} target="_blank" rel="noopener noreferrer">r/{file.data.subreddit}</a>
+                            <br/>Posted on: {dateVar.toDateString()}
                         </p>
                     </div>
                 </div>
