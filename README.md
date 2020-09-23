@@ -15,5 +15,5 @@ You will also see any lint errors in the console.
 
 You may need download Node.js to run. If you have "'react-scripts' is not recognized as internal or external commmand" error, please run:
 
-### npm install react-scripts --save
+### 'npm install react-scripts --save'
 
